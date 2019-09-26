@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Test</title>
+</head>
+<body>
+  <div id="results" style="display:none">
+    <iframe title="Ragi Idli  | Finger Millet Idli | Millet recipes | Idli recipes" width="650" height="366" src="https://www.youtube.com/embed/GkGtpOibW6s?feature=oembed" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+  </div>
+  <script language="javascript">
+    function myFunction() {
+      setInterval(function(){
+        var isOnline = window.navigator.onLine;
+        var a = '';
+        if (isOnline) {
+          document.getElementById('results').style.display='block';
+          console.log('on');
+        }
+        else {
+          document.getElementById('results').style.display='none';
+          console.log('off');
+        }
+      }, 3000);
+    }
+
+    myFunction();
+  </script>
+</body>
+</html>
